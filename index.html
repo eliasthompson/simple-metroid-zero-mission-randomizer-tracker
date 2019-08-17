@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Metroid: Zero Mission Randomizer Tracker</title>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<script type="text/javascript" src="scripts/functions.js"></script>
+	</head>
+
+	<body>
+		<div class="tracker">
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/morphball.png" alt="Morph Ball" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/longbeam.png" alt="Long Beam" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/missiles.png" alt="Missiles" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/chargebeam.png" alt="Charge Beam" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/bombs.png" alt="Bombs" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/plasmabeam.png" alt="Plasma Beam" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/powergrip.png" alt="Power Grip" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/icebeam.png" alt="Ice Beam" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/spacejump.png" alt="Space Jump" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/speedbooster.png" alt="Speed Booster" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/hijump.png" alt="Hi-Jump" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/variasuit.png" alt="Varia Suit" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/wavebeam.png" alt="Wave Beam" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/supermissiles.png" alt="Super Missiles" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/gravitysuit.png" alt="Gravity Suit" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/screwattack.png" alt="Screw Attack" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/charlie.png" alt="Charlie Beaten" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="items grayscale">
+					<img src="images/items/powerbomb.png" alt="Power Bombs" />
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			document.addEventListener('wheel', function (e) { e.preventDefault(); });
+			document.querySelectorAll('.item:not(.auto)').forEach(function (item) {
+				item.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+				item.addEventListener('mousedown', function (e) { toggle_item(e); });
+			});
+		</script>
+	</body>
+</html>
